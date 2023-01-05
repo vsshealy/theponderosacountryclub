@@ -1,0 +1,48 @@
+{
+    "name": "theme/theponderosacountryclub",
+    "description": "Setup required assets for theme",
+    "type": "wordpress-theme",
+    "minimum-stability": "stable",
+
+    "authors": [
+        {
+            "name": "Scott Shealy",
+            "email": "vsshealy@gmail.com"
+        }
+    ],
+
+    "extra": {
+        "installer-paths": {
+            "../../plugins/{$name}/": [
+                "wpackagist-plugin/*",
+                "type:wordpress-plugin"
+            ]
+        }
+    },
+
+    "require": {
+        "wpackagist-plugin/advanced-custom-fields": "*",
+        "wpackagist-plugin/all-in-one-wp-migration": "*",
+        "wpackagist-plugin/custom-post-type-ui": "*",
+        "wpackagist-plugin/disable-gutenberg": "*",
+        "wpackagist-plugin/elementor": "*",
+        "wpackagist-plugin/ele-custom-skin": "*",
+        "wpackagist-plugin/svg-support": "*",
+        "wpackagist-plugin/upload-max-file-size": "*",
+        "wpackagist-plugin/wp-retina-2x": "*"
+    },
+
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://wpackagist.org"
+        }
+    ],
+
+    "config": {
+        "secure-http": false,
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}
