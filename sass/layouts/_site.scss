@@ -1,0 +1,88 @@
+/**
+ * sass/layouts/site.scss
+ * @package theponderosacountryclub
+ * @author Scott Shealy
+ * @version 1.0.0
+ * @copyright 2023
+**/
+
+* {
+    // GLOBAL
+        margin: $margin-none;
+        padding: $padding-none;
+        box-sizing: border-box;
+
+    // MOBILE
+        @media #{$media-xs} {} //.COL-XS
+        @media #{$media-sm} {} //.COL-SM
+        @media #{$media-md} {} //.COL-MD
+        @media #{$device-mobile} {} //.MOBILE
+
+    // DESKTOP
+        @media #{$device-desktop} {} //.DESKTOP
+        @media #{$media-lg} {} //.COL-LG
+        @media #{$media-xl} {} //.COL-XL
+        @media #{$media-xxl} {} //.COL-XXL
+} // *
+
+html {
+    // GLOBAL
+        height: 100.00vh;
+        width: 100.00%;
+        position: relative;
+        overflow-x: hidden;
+
+    // MOBILE
+        @media #{$media-xs} {} //.COL-XS
+        @media #{$media-sm} {} //.COL-SM
+        @media #{$media-md} {} //.COL-MD
+        @media #{$device-mobile} {} //.MOBILE
+
+    // DESKTOP
+        @media #{$device-desktop} {} //.DESKTOP
+        @media #{$media-lg} {} //.COL-LG
+        @media #{$media-xl} {} //.COL-XL
+        @media #{$media-xxl} {} //.COL-XXL
+} // HTML
+
+body {
+    // GLOBAL
+        height: 100.00% !important;
+        width: 100.00%;
+        display: flex !important;
+        flex-direction: column !important;
+        position: relative;
+        margin: $margin-none;
+        padding: $padding-none;
+        background-color: $body-background-color;
+        font-family: $body-text;
+        letter-spacing: $letter-spacing-normal;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: $body-text-color;
+
+    // MOBILE
+        @media #{$media-xs} {
+            font-size: $font-size-xs;
+        } //.COL-XS
+        @media #{$media-sm} {
+            font-size: $font-size-sm;
+        } //.COL-SM
+        @media #{$media-md} {
+            font-size: $font-size-md;
+        } //.COL-MD
+        @media #{$device-mobile} {} //.MOBILE
+
+    // DESKTOP
+        @media #{$device-desktop} {} //.DESKTOP
+        @media #{$media-lg} {
+            font-size: $font-size-lg;
+        } //.COL-LG
+        @media #{$media-xl} {
+            font-size: $font-size-xl;
+        } //.COL-XL
+        @media #{$media-xxl} {
+            font-size: $font-size-xxl;
+        } //.COL-XXL
+} // BODY

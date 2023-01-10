@@ -1,0 +1,174 @@
+/**
+ * sass/objects/buttons.scss
+ * @package theponderosacountryclub
+ * @author Scott Shealy
+ * @version 1.0.0
+ * @copyright 2023
+**/
+
+// LISTS
+    $button-solid: ".button, .button-solid, .button-form, .button-elementor, .btn-slider";
+    $button-alt: ".button-alt";
+    $button-ghost: ".button-ghost";
+    $button-mobile: ".button-mobile";
+    $button-all: "#{$button-solid}, #{$button-alt}, #{$button-ghost}, #{$button-mobile}";
+
+// SETTINGS
+    $button-text-size: $body-text-size;
+    $button-text-style: none;
+    $button-font-weight: 400;
+    $button-border-weight: $border-outline-weight;
+
+    // BUTTON-SOLID
+        $button-solid-border: $button-border-weight solid $button-solid-text-color;
+        $button-solid-hover-border: $button-border-weight solid $button-solid-hover-text-color;
+
+    // BUTTON-ALT
+        $button-alt-border: $button-border-weight solid $button-alt-text-color;
+        $button-alt-hover-border: $button-border-weight solid $button-alt-hover-text-color;
+
+    // BUTTON-GHOST
+        $button-ghost-border: $button-border-weight solid $button-ghost-text-color;
+        $button-ghost-hover-border: $button-border-weight solid $button-ghost-hover-text-color;
+
+    // BUTTON-MOBILE
+        $button-mobile-border: $button-border-weight solid $button-mobile-text-color;
+        $button-mobile-hover-border: $button-border-weight solid $button-mobile-hover-text-color;
+
+// STYLES
+    #{$button-all} {
+        // GLOBAL
+            display: inline-block;
+            margin: $button-margin-vertical $button-margin-horizontal;
+            padding: $button-padding-vertical $button-padding-horizontal;
+            font-family: $button-text;
+            font-size: $button-text-size;
+            font-weight: $button-font-weight;
+            text-align: center;
+            text-transform: $button-text-style;
+
+            &:hover {
+                cursor: pointer;
+            } //:HOVER
+
+            i {
+                display: inline-block;
+                margin-left: $margin-none;
+                margin-right: $margin-xs;
+            } //I
+
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+    } //.BUTTON-ALL
+
+    #{$button-solid} {
+        // GLOBAL
+            background-color: $button-solid-color;
+            border: $button-solid-border;
+            color: $button-solid-text-color;
+
+            &:hover {
+                background-color: $button-solid-hover-color;
+                border: $button-solid-hover-color;
+                color: $button-solid-hover-text-color;
+            } //:HOVER
+
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+    } //.BUTTON-SOLID
+
+    #{$button-alt} {
+        // GLOBAL
+            background-color: $button-alt-color;
+            border: $button-alt-border;
+            color: $button-alt-text-color;
+
+            &:hover {
+                background-color: $button-alt-hover-color;
+                border: $button-alt-hover-color;
+                color: $button-alt-hover-text-color;
+            } //:HOVER
+
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+    } //.BUTTON-ALT
+
+    #{$button-ghost} {
+        // GLOBAL
+            background-color: $button-ghost-color;
+            border: $button-ghost-border;
+            color: $button-ghost-text-color;
+
+            &:hover {
+                background-color: $button-ghost-hover-color;
+                border: $button-ghost-hover-color;
+                color: $button-ghost-hover-text-color;
+            } //:HOVER
+
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+    } //.BUTTON-GHOST
+
+    #{$button-mobile} {
+        // GLOBAL
+            width: 100.00%;
+            display: block;
+            margin: $button-margin-vertical auto !important;
+            background-color: $button-mobile-color;
+            border: $button-mobile-border;
+            color: $button-mobile-text-color;
+
+            &:hover {
+                background-color: $button-mobile-hover-color;
+                border: $button-mobile-hover-color;
+                color: $button-mobile-hover-text-color;
+            } //:HOVER
+
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+    } //.BUTTON-MOBILE

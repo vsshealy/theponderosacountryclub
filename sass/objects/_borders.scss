@@ -1,0 +1,22 @@
+/**
+ * sass/objects/borders.scss
+ * @package theponderosacountryclub
+ * @author Scott Shealy
+ * @version 1.0.0
+ * @copyright 2023
+**/
+
+.border {
+    // GLOBAL
+    // MOBILE
+        @media #{$media-xs} {} //.COL-XS
+        @media #{$media-sm} {} //.COL-SM
+        @media #{$media-md} {} //.COL-MD
+        @media #{$device-mobile} {} //.MOBILE
+
+    // DESKTOP
+        @media #{$device-desktop} {} //.DESKTOP
+        @media #{$media-lg} {} //.COL-LG
+        @media #{$media-xl} {} //.COL-XL
+        @media #{$media-xxl} {} //.COL-XXL
+} //.BORDER
